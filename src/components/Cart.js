@@ -8,7 +8,6 @@ import Header from "./Header";
 
 const Cart = () => {
   const [checkBtn, setcheckBtn] = useState(false);
-  
   // const keyIndex = new Date();
   const dispatch = useDispatch();
   let catToData = useSelector((state) => state.catToData);
