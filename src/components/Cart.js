@@ -70,6 +70,7 @@ const Cart = () => {
         })
         .catch((e) => {
           setcheckBtn(false);
+          alert("ERR_CONNECTION_REFUSED");
           console.error(e.error);
         });
     } else {
