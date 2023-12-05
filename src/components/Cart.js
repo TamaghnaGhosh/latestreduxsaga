@@ -73,7 +73,8 @@ const Cart = () => {
           alert("ERR_CONNECTION_REFUSED");
           console.error(e.error);
         });
-    } else {
+    }
+    else {
       alert("Please give some data");
     }
   };
