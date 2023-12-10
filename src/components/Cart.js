@@ -69,8 +69,11 @@ const Cart = () => {
           window.location = url;
         })
         .catch((e) => {
+          
           setcheckBtn(false);
+
           alert("ERR_CONNECTION_REFUSED");
+
           console.error(e.error);
         });
     }
