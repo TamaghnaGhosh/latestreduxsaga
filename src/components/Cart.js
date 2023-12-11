@@ -75,6 +75,7 @@ const Cart = () => {
           alert("ERR_CONNECTION_REFUSED");
 
           console.error(e.error);
+          
         });
     }
     else {
