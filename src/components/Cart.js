@@ -89,7 +89,7 @@ const Cart = () => {
       <NavLink className="NavLink" to="/">
         Go to Products Link
       </NavLink>
-
+      
       <h1>Cart Page</h1>
 
       <div className="cart-page-container">
