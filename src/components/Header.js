@@ -7,13 +7,17 @@ const Header = () => {
   const dispatch = useDispatch();
   const location = useLocation();
 
-  // console.log("redux data in header", result);
+  console.log("redux data in header", result);
+  console.log(
+    "🚀 ~ Header ~ result?.map((e) => e?.quantity)?.reduce((a, b) => a + b, 0):",
+    result?.map((e) => e?.quantity)?.reduce((a, b) => a + b, 0)
+  );
   return (
     <div className="header">
       <Link to="/">
         <h1 className="logo">E-commerce</h1>
       </Link>
-      {(location.pathname !== "/cart" && location.pathname !== "/wishList")  && (
+      {location.pathname !== "/cart" && location.pathname !== "/wishList" && (
         <>
           <div className="search-box">
             <input
@@ -25,7 +29,10 @@ const Header = () => {
 
           <Link to="/cart">
             <div className="cart-div">
-              <span>{result.length}</span>
+              <span>
+                {/* {result?.length} */}
+                {result?.map((e) => e?.quantity)?.reduce((a, b) => a + b, 0)}
+              </span>
               <img
                 src="https://cdn-icons-png.flaticon.com/512/263/263142.png"
                 alt=""
