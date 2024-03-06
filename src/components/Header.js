@@ -2,6 +2,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { Link, useLocation } from "react-router-dom";
 import { productSearch } from "../redux/productAction";
 const Header = () => {
+  
   const result = useSelector((state) => state.catToData);
   const result2 = useSelector((state) => state.wishListData);
   const dispatch = useDispatch();
