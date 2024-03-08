@@ -8,11 +8,11 @@ const Header = () => {
   const dispatch = useDispatch();
   const location = useLocation();
 
-  console.log("redux data in header", result);
-  console.log(
-    "🚀 ~ Header ~ result?.map((e) => e?.quantity)?.reduce((a, b) => a + b, 0):",
-    result?.map((e) => e?.quantity)?.reduce((a, b) => a + b, 0)
-  );
+  // console.log("redux data in header", result);
+  // console.log(
+  //   "🚀 ~ Header ~ result?.map((e) => e?.quantity)?.reduce((a, b) => a + b, 0):",
+  //   result?.map((e) => e?.quantity)?.reduce((a, b) => a + b, 0)
+  // );
   return (
     <div className="header">
       <Link to="/">
