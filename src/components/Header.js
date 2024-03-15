@@ -9,11 +9,12 @@ const Header = () => {
   const location = useLocation();
 
   // console.log("redux data in header", result);
-  
+
   // console.log(
   //   "🚀 ~ Header ~ result?.map((e) => e?.quantity)?.reduce((a, b) => a + b, 0):",
   //   result?.map((e) => e?.quantity)?.reduce((a, b) => a + b, 0)
   // );
+  
   
   return (
     <div className="header">
