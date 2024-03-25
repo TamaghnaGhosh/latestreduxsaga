@@ -50,7 +50,7 @@ function Main() {
     <div>
       <Header />
       <div className="marginTop">
-        <button onClick={() => dispatch(emptyCart())}>Empty Cart</button>
+        <button data-testid="emptycardID" onClick={() => dispatch(emptyCart())} >Empty Cart</button>
       </div>
       <div className="product-container">
         {data.map((item, i) => (
