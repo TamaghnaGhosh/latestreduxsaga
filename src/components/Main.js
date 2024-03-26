@@ -4,10 +4,10 @@ import { toast } from "react-toastify";
 import {
   addToCart,
   emptyCart,
-  removeFromCart,
+  // removeFromCart,
   wishListToCart,
   wishListRmvFromCart,
-  quentityAddToCart,
+  // quentityAddToCart,
 } from "../redux/action";
 import { useDispatch } from "react-redux";
 import { productList } from "../redux/productAction";
@@ -38,7 +38,6 @@ function Main() {
     dispatch(addToCart(item));
   };
 
-  
   // const removeCart = (itemID) => {
   //   dispatch(removeFromCart(itemID))
   // }
@@ -51,7 +50,9 @@ function Main() {
     <div>
       <Header />
       <div className="marginTop">
-        <button data-testid="emptycardID" onClick={() => dispatch(emptyCart())} >Empty Cart</button>
+        <button data-testid="emptycardID" onClick={() => dispatch(emptyCart())}>
+          Empty Cart
+        </button>
       </div>
       <div className="product-container">
         {data.map((item, i) => (
