@@ -38,6 +38,7 @@ function Main() {
     dispatch(addToCart(item));
   };
 
+  
   // const removeCart = (itemID) => {
   //   dispatch(removeFromCart(itemID))
   // }
