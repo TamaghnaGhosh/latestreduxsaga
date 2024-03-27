@@ -1,4 +1,4 @@
-import { takeEvery, put, call, takeLatest, delay } from "redux-saga/effects";
+import { takeEvery, put, call, takeLatest, delay, fork } from "redux-saga/effects";
 import { PRODUCT_LIST, SET_PRODUCT_LIST, SEARCH_PRODUCT } from "./constant";
 import { BASE_URL } from "../config";
 
