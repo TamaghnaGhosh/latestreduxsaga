@@ -37,11 +37,9 @@ function Main() {
   const addToCartData = (item) => {
     dispatch(addToCart(item));
   };
-
   // const removeCart = (itemID) => {
   //   dispatch(removeFromCart(itemID))
   // }
-
   const goToCart = () => {
     navigate("/cart");
   };
