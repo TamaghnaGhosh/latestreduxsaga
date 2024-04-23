@@ -41,7 +41,6 @@ function Main() {
   // const removeCart = (itemID) => {
   //   dispatch(removeFromCart(itemID))
   // }
-  
   const goToCart = () => {
     navigate("/cart");
   };
